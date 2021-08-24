@@ -15,7 +15,7 @@ jobs:
   shake:
     strategy:
       matrix:
-        os: [self-hosted, self-hosted,LINUX_POC]
+        os: [Windows, LINUX_POC]
     runs-on: ${{ matrix.os }}
     
     
