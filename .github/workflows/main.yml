@@ -13,10 +13,10 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   shake:
-    runs-on: ubuntu-latest
     strategy:
       matrix:
-        runs-on: [windows-latest]
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     
     
     steps:
